@@ -1,2 +1,13 @@
-# Git
-Reference Materials
+# Version Control System (VCS)
+- VCS are a category of softwaretools that helps in recording made to files by keeping a track of modifications done in the code.
+- Version control is also known as **Revision Control, Source Control & Source Code Management.**
+- Version control is a component of software configuration management.
+- Version Control includes viewing old versions & enables reverting a file to previous version.
+- Benefits of version control systems:
+  - A complete long-term change history of every file.
+  - Branching and merging.
+  - Traceability.
+- There are three types of VCS
+  - Localized VCS
+  - Centralized VCS
+  - Distributed VCS
