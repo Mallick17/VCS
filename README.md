@@ -11,7 +11,7 @@
   - Localized VCS
   - Centralized VCS
   - Distributed VCS
- 
+ ![VCS Types](https://github.com/user-attachments/assets/209f97a5-ca98-4963-90da-0bc05de5534f)
 ### Localized VCS
 - It is one of the simplest forms and has a database that kept all the changes to files under Revision Control System (RCS).
 - RCS is the most common VCS tools.
@@ -34,7 +34,7 @@
   - They Update
 - The most popular distributed VCS are Git, Mercurial, BitBucket.
 - They helps us overcome the problem of single point of failure.
-![VCS Types](https://github.com/user-attachments/assets/209f97a5-ca98-4963-90da-0bc05de5534f)
+
 
 # Git
 **GIT = Global Information Tracker**
