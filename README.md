@@ -40,6 +40,9 @@
 **GIT = Global Information Tracker**
 - Git is open source, distributed version control tool to achieve collabration with each & every developers. where we can track each & every modification or changes & we can have more control over each version of the code.
 - Benefits are **Feature Branch Overflow, Distributed Development, Pull Requests, Community, Faster Release Cycle**
+## Git Workflow
+![git_workflow](https://github.com/user-attachments/assets/ea84d565-6d61-4b5d-a7c4-80c340165a30)
+
 ## Git Commands & Explaination
 
 | Keywords                     | Description                                                                                                             |
