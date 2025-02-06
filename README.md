@@ -41,3 +41,52 @@
 - Git is open source, distributed version control tool to achieve collabration with each & every developers. where we can track each & every modification or changes & we can have more control over each version of the code.
 - Benefits are **Feature Branch Overflow, Distributed Development, Pull Requests, Community, Faster Release Cycle**
 
+---
+ # Generating SSH Key and Setting Up Access
+
+Follow these steps to generate an SSH key on the Ansible-Master and set up access to the Worker node.
+
+## Generate SSH Key on Linux
+
+- **Open a terminal in Git Bash or Linux and execute the following command:**
+
+  ### 
+  ```sh
+  ssh-keygen
+  ```
+- **You will then be prompted to "Enter a file in which to save the key."**
+  - You can specify a file location or press “Enter” to accept the default file location.
+    ```sh
+    Enter a file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]
+    ```
+- **The next prompt will ask for a secure passphrase. A passphrase will add an additional layer of security to the SSH and will be required anytime the SSH key is used. If someone gains access to the computer that private keys are stored on, they could also gain access to any system that uses that key. Adding a passphrase to keys will prevent this scenario.**
+  ```sh
+  > Enter passphrase (empty for no passphrase): [Type a passphrase]
+  > Enter same passphrase again: [Type passphrase again]
+  ```
+  
+- **List all files in the current directory to verify the creation of the key**
+  ```sh
+  ls -a
+  ```
+- Navigate to the .ssh directory
+  ```sh 
+  cd .ssh
+  ```
+- View the contents of the generated SSH key
+  ```sh
+  cat id_rsa
+  ```
+- **Add the new SSH key to the ssh-agent**
+  - The ssh-agent is another program that is part of the SSH toolsuite. The ssh-agent is responsible for holding private keys. In addition to holding private keys it also brokers requests to sign SSH requests with the private keys so that private keys are never passed around unsecurly.
+  - Before adding the new SSH key to the ssh-agent first ensure the ssh-agent is running by executing:
+    ```sh
+    $ eval "$(ssh-agent -s)"
+    > Agent pid 59566
+    ```
+  - Once the ssh-agent is running the following command will add the new SSH key to the local SSH agent.
+    ```sh
+    ssh-add -K /Users/you/.ssh/id_rsa
+    ```
+  - The new SSH key is now registered and ready to use.
+    
