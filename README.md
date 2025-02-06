@@ -124,9 +124,10 @@
 
 
 ---
- # Generating SSH Key and Setting Up Access
-
-Follow these steps to generate an SSH key on the Ansible-Master and set up access to the Worker node.
+ # Generating Git SSH Key and Setting Up Access
+ - An SSH key is an access credential for the SSH (secure shell) network protocol. This authenticated and encrypted secure network protocol is used for remote communication between machines on an unsecured open network. SSH is used for remote file transfer, network management, and remote operating system access. The SSH acronym is also used to describe a set of tools used to interact with the SSH protocol.
+ - The key pair contains a public and private key. The private vs public nomenclature can be confusing as they are both called keys. It is more helpful to think of the public key as a "lock" and the private key as the "key". You give the public 'lock' to remote parties to encrypt or 'lock' data. This data is then opened with the 'private' key which you hold in a secure place.
+- Follow these steps to generate an SSH key
 
 ## Generate SSH Key on Linux
 
